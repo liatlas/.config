@@ -41,10 +41,6 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/gruvbox_dark.png
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-
 bindsym $mod+Shift+p exec ~/.config/i3/scripts/power_menu.sh
 
 # Use pactl to adjust volume in PulseAudio.

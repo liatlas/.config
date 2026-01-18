@@ -14,7 +14,7 @@ ROFI_TEXT="${ROFI_TEXT:-Menu:}"
 ROFI_OPTIONS=(${ROFI_OPTIONS:--theme-str 'window {width: 11%; border: 2;} listview {scrollbar: false;}' -location 0})
 
 # Whether to ask for user's confirmation
-enable_confirmation=${ENABLE_CONFIRMATIONS:-false}
+enable_confirmation=${ENABLE_CONFIRMATIONS:-true}
 
 # Preferred launcher if both are available
 preferred_launcher="${LAUNCHER:-rofi}"

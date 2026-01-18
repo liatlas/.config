@@ -1,6 +1,10 @@
 vim.opt.mouse = ""
 
 vim.o.undofile = true
+vim.o.backup = true
+
+local backup_dir = os.getenv("HOME") .. "/.cache/nvim/backups//"
+vim.o.backupdir = backup_dir
 
 vim.opt.winborder = "rounded"
 vim.g.have_nerd_font = true
@@ -26,4 +30,3 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.cc = "40"
-
