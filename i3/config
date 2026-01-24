@@ -32,7 +32,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/gruvbox_dark.png
+exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/notebook.png
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -189,3 +189,9 @@ bar {
 }
 
 client.focused #000000 #000000 #000000 #000000 #8b8b8b #000000
+for_window [all] focus
+
+assign [class="zen"] 2
+assign [class="Logseq"] 4
+assign [class="Thunar"] 3
+assign [class="Alacritty"] 1
